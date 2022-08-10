@@ -1,5 +1,6 @@
 import Head from 'next/head';
 import Image from 'next/image';
+import About from 'src/components/about/About';
 import Navbar from '../components/nav/Navbar';
 import styles from '../styles/Home.module.scss';
 
@@ -58,7 +59,7 @@ export default function Home() {
           </a>
         </div> */}
       </main>
-
+      <About />
       <footer className={styles.footer}>
         <span className={styles.logo}>
           <Image src='/lara.svg' alt='Vercel Logo' width={72} height={16} />
