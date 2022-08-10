@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import Link from 'next/link';
 import React from 'react';
 import styles from 'src/components/about/About.module.scss';
 function About() {
@@ -22,7 +23,9 @@ function About() {
             <p>
               Soy química de profesión y tengo una maestría en biotecnología.
             </p>
+            <Link href={"/sobre-mi"}>
             <button className={styles.btn}>Saber más</button>
+</Link>
           </div>
         </div>
       </section>

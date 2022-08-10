@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react';
 import Image from 'next/image';
 import styles from '../../styles/Navbar.module.scss';
+import Link from 'next/link';
 
 function Navbar() {
   useEffect(() => {
@@ -15,8 +16,11 @@ function Navbar() {
         document.documentElement.scrollTop >= 30
       ) {
         navScr.style.backgroundColor = '#4C52A2';
+        navScr.style.color = '#fff';
+
       } else {
         navScr.style.backgroundColor = 'transparent';
+        navScr.style.color = 'inherit';
       }
     };
   };
@@ -24,22 +28,25 @@ function Navbar() {
     <>
       <nav className={styles.navbar} id='navbar'>
         <div className={styles.nav_container}>
-          <div className={styles.nav_logo}>
-            <Image src='/lara.svg' height={80} width={80} alt='logo' />
-          </div>
-          {/* <div className={styles.nav_links}>
+          <Link href={'/'}>
+            <a className={styles.nav_logo}>
+              <Image src='/lara.svg' height={80} width={80} alt='logo' />
+            </a>
+          </Link>
+          <div className={styles.nav_links}>
             <ul>
               <li>
-                <a href='#'>Home</a>
+                <Link href='/sobre-mi'>
+                  <a>Sobre mí</a>
+                </Link>
               </li>
               <li>
-                <a href='#'>About</a>
-              </li>
-              <li>
-                <a href='#'>Contact</a>
+                <Link href='/contacto'>
+                  <a>Contacto</a>
+                </Link>
               </li>
             </ul>
-          </div> */}
+          </div>
         </div>
       </nav>
     </>

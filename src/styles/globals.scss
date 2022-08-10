@@ -1,5 +1,6 @@
 html,
 body {
+  background-color: #ffffff;
   padding: 0;
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
@@ -32,13 +33,15 @@ a {
 }
 
 a {
-  color: #4c52a2;
   text-decoration: none;
+font-weight: bold;
+letter-spacing: 1px;
 
   &:hover,
   &:focus,
   &:active {
-    text-decoration: underline;
+    text-decoration: none;
+    color: #f49ebb;
   }
 }
 
@@ -49,7 +52,6 @@ html {
 } /*16px*/
 
 body {
-  background: white;
   font-family: 'Montserrat', sans-serif;
   font-weight: 400;
   line-height: 1.75;
@@ -96,4 +98,11 @@ small,
   font-size: 0.8rem;
 }
 
-
+section {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+}
