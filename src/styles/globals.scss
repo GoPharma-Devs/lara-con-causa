@@ -1,3 +1,5 @@
+@import './libs/mixins';
+
 html,
 body {
   background-color: #ffffff;
@@ -8,7 +10,6 @@ body {
   color: #4c52a2;
   background: #ffffff;
   background: linear-gradient(#394377, #fcfdff);
-  
 }
 
 a {
@@ -100,6 +101,7 @@ small,
 }
 
 section {
+  padding: 1rem;
   background-color: #f2eaff;
   height: 100%;
   min-height: 100vh;
@@ -108,9 +110,12 @@ section {
   align-items: center;
   justify-content: center;
   box-sizing: content-box;
+  @include phone{
+    padding: 1rem;
+  }
 }
-footer{
-  img{
+footer {
+  img {
     filter: invert(1);
   }
 }

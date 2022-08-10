@@ -15,9 +15,7 @@ function Contacto() {
       <section className={styles.contact}>
         <div className='contenedor'>
           <h2>Contacto</h2>
-          <p>
-            lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam,
-          </p>
+          <p>Iniciemos una conversación</p>
         </div>
       </section>
     </>

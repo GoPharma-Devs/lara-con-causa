@@ -31,6 +31,24 @@ function About() {
         <div className={styles.about_container}>
          
           <div className={styles.about_text}>
+          
+            <p>
+            Trabajé 7 años en la industria de biotecnología como proveedora de tecnologías e insumos para los centros de investigación y la industria de este sector en nuestro país. Es decir, todos aquellos científicos que estudian el ADN, las proteínas, microorganismos como bacterias, hongos y virus y las empresas que producen todo esto con algún fin terapéutico, alimentario o agroindustrial.
+            </p>
+            <p>
+            Desde hace 16 años trabajo para la industria farmacéutica, específicamente en el área de “Estudios Clínicos” en esto que ahora nos es más familiar por la Covid; todo el trabajo de investigación que hacen las compañías para probar una molécula antes de poder comercializarla como medicamento o vacuna para la cura o tratamiento de muchas enfermedades.
+            </p>
+           
+          </div>
+          <div className={styles.about_image}>
+            <Image src='/aboutme.png' height={556} width={492} alt='lara' />
+          </div>
+        </div>
+        <div className={styles.about_container}>
+          <div className={styles.about_image}>
+            <Image src='/aboutme.png' height={556} width={492} alt='lara' />
+          </div>
+          <div className={styles.about_text}>
             <strong>Sobre mí</strong>
             <h1>Lara como persona y profesionista </h1>
             <p>
@@ -44,9 +62,6 @@ function About() {
               Soy química de profesión y tengo una maestría en biotecnología.
             </p>
            
-          </div>
-          <div className={styles.about_image}>
-            <Image src='/aboutme.png' height={556} width={492} alt='lara' />
           </div>
         </div>
       </section>

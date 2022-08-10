@@ -1,3 +1,4 @@
+@import './libs/mixins';
 .container {
   padding: 0;
 }
@@ -15,7 +16,6 @@
   background-size: cover;
   background-position: top;
   background-attachment: fixed;
-
 }
 
 .contenedor {
@@ -24,6 +24,9 @@
   justify-content: center;
   align-items: center;
   text-align: left;
+  @include tablet {
+    flex-flow: column-reverse;
+  }
 }
 
 .footer {

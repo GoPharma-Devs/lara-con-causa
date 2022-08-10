@@ -18,8 +18,9 @@ export default function Home() {
           <Image
             src='/larizatinoco.png'
             alt='lara Logo'
-            width={350}
-            height={477}
+            width={280}
+            height={390}
+            layout='intrinsic'
             className={styles.personajeLara}
           />
 
