@@ -1,7 +1,7 @@
 import Head from 'next/head';
 import React from 'react';
 import Navbar from '../components/nav/Navbar';
-import styles from '../styles/AboutMe.module.scss';
+import styles from '../styles/contact.module.scss';
 
 function Contacto() {
   return (
@@ -12,7 +12,7 @@ function Contacto() {
         <link rel='icon' href='/favicon.png' />
       </Head>
       <Navbar />
-      <section className={styles.Aboutme}>
+      <section className={styles.contact}>
         <div className='contenedor'>
           <h2>Contacto</h2>
           <p>
