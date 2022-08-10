@@ -1,14 +1,21 @@
 .container {
-  padding: 0 2rem;
+  padding: 0;
 }
 
 .main {
+  width: 100%;
   min-height: 100vh;
-  padding: 4rem 0;
   flex: 1;
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color: rgb(255, 255, 255);
+  background-image: url('/bg-home.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
+  background-attachment: fixed;
+
 }
 
 .contenedor {
@@ -34,7 +41,9 @@
     flex-grow: 1;
   }
 }
-
+.personajeLara {
+  padding: 6rem;
+}
 .title {
   flex: 1;
   text-align: left;
@@ -42,7 +51,10 @@
   line-height: 1.15;
   font-size: calc(1rem + 1.6vw);
   padding: 2rem;
-  max-width: 645px ;
+  max-width: 645px;
+  span {
+    color: #ffffff;
+  }
 }
 
 .description {
@@ -114,7 +126,8 @@
 @media (prefers-color-scheme: dark) {
   .card,
   .footer {
-    border-color: #44359a;
+    background: #737fbe;
+    border-color: #ccc5f2;
   }
 
   .code {
